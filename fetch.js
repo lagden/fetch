@@ -14,7 +14,7 @@
 
   'use strict';
 
-  var hasFetch = 'fetch' in self && self[ 'fetch' ] !== null;
+  var hasFetch = 'fetch' in self && self.fetch !== undefined;
   if(hasFetch) {
     return self.fetch;
   }
